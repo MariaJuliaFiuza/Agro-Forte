@@ -3,43 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte</title>
+    <title>Agro Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Botões de Acessibilidade -->
+    <div class="acessibilidade">
+        <button onclick="aumentarFonte()">A+</button>
+        <button onclick="diminuirFonte()">A-</button>
+        <button onclick="altoContraste()">🌙 Contraste</button>
+    </div>
+
     <header>
-        <h1>Agro Forte</h1>
-        <button id="acessibilidade">Modo Acessível</button>
+        <h1>🌱 Agro Sustentável</h1>
+        <p>Produzir alimentos preservando o meio ambiente</p>
     </header>
 
-    <section class="hero">
-        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1350&q=80" alt="Campo verde">
-        <div class="hero-text">
-            <h2>Força e Vida no Campo</h2>
-            <p>Conectando tecnologia e agricultura para um futuro mais sustentável.</p>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#praticas">Práticas Sustentáveis</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>O que é Agro Sustentável?</h2>
+        <p>
+            O agro sustentável busca equilibrar a produção agrícola com a preservação
+            dos recursos naturais. Por meio de tecnologias e práticas responsáveis,
+            é possível aumentar a produtividade sem comprometer o meio ambiente.
+        </p>
+    </section>
+
+    <section id="praticas">
+        <h2>Práticas Sustentáveis no Campo</h2>
+
+        <div class="card">
+            <h3>🌱 Rotação de Culturas</h3>
+            <p>Alternar diferentes culturas melhora a fertilidade do solo e reduz pragas.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Irrigação Inteligente</h3>
+            <p>Evita desperdício de água e aumenta a eficiência da produção.</p>
+        </div>
+
+        <div class="card">
+            <h3>♻️ Reutilização de Resíduos</h3>
+            <p>Resíduos orgânicos podem ser transformados em fertilizantes naturais.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚜 Agricultura de Precisão</h3>
+            <p>Uso de drones, sensores e GPS para otimizar recursos e aumentar a produtividade.</p>
         </div>
     </section>
 
-    <section class="features">
-        <div class="feature">
-            <img src="https://images.unsplash.com/photo-1600180758895-f896e19cb67a?auto=format&fit=crop&w=800&q=80" alt="Trator">
-            <h3>Máquinas Modernas</h3>
-            <p>Equipamentos que aumentam a produtividade e reduzem esforço.</p>
+    <section id="beneficios">
+        <h2>Benefícios do Agro Sustentável</h2>
+        <ul>
+            <li>Preservação do solo e da água.</li>
+            <li>Redução dos impactos ambientais.</li>
+            <li>Aumento da produtividade agrícola.</li>
+            <li>Produção responsável de alimentos.</li>
+            <li>Melhoria da qualidade de vida no campo.</li>
+        </ul>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz do Agro Sustentável</h2>
+
+        <div class="pergunta">
+            <p>1. Qual prática ajuda a preservar a fertilidade do solo?</p>
+            <button onclick="verificar(1,'a')">Rotação de Culturas</button>
+            <button onclick="verificar(1,'b')">Queimadas</button>
         </div>
-        <div class="feature">
-            <img src="https://images.unsplash.com/photo-1518531933035-4e0ecf3bb0d4?auto=format&fit=crop&w=800&q=80" alt="Plantações">
-            <h3>Cultivos Sustentáveis</h3>
-            <p>Práticas que respeitam o meio ambiente e geram alimentos de qualidade.</p>
+
+        <div class="pergunta">
+            <p>2. Qual tecnologia auxilia na agricultura de precisão?</p>
+            <button onclick="verificar(2,'a')">Drone</button>
+            <button onclick="verificar(2,'b')">Máquina de escrever</button>
         </div>
-        <div class="feature">
-            <img src="https://images.unsplash.com/photo-1553269403-3f8f67d70120?auto=format&fit=crop&w=800&q=80" alt="Tecnologia agrícola">
-            <h3>Inovação no Campo</h3>
-            <p>Uso da tecnologia para otimizar processos e recursos naturais.</p>
+
+        <div class="pergunta">
+            <p>3. A irrigação inteligente tem como objetivo:</p>
+            <button onclick="verificar(3,'a')">Economizar água</button>
+            <button onclick="verificar(3,'b')">Desperdiçar água</button>
         </div>
+
+        <div class="pergunta">
+            <p>4. O agro sustentável busca:</p>
+            <button onclick="verificar(4,'a')">Produzir e preservar</button>
+            <button onclick="verificar(4,'b')">Produzir sem cuidar do ambiente</button>
+        </div>
+
+        <div class="pergunta">
+            <p>5. O uso de resíduos orgânicos pode gerar:</p>
+            <button onclick="verificar(5,'a')">Fertilizantes naturais</button>
+            <button onclick="verificar(5,'b')">Poluição</button>
+        </div>
+
+        <h3 id="resultado"></h3>
     </section>
 
     <footer>
-        <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
+        <p>🌿 Projeto Agro Sustentável © 2026</p>
     </footer>
 
     <script src="script.js"></script>

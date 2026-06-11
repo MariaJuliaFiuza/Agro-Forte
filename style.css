@@ -1,0 +1,78 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f0;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header button {
+    padding: 10px 15px;
+    background-color: #a5d6a7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #81c784;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #c8e6c9;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Classe para aumentar fonte */
+.large-text {
+    font-size: 1.2em;
+}

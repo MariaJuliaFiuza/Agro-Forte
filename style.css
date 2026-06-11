@@ -3,76 +3,129 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cores do tema agro */
+:root {
+    --primary-color: #4CAF50; /* verde vibrante */
+    --secondary-color: #FFD700; /* amarelo campo */
+    --text-color: #333;
+    --background-color: #f4f4f4;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f0;
-    color: #333;
-    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
+/* Header */
 header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2e7d32;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 header button {
-    padding: 10px 15px;
-    background-color: #a5d6a7;
+    background-color: var(--secondary-color);
     border: none;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     cursor: pointer;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
 header button:hover {
-    background-color: #81c784;
+    opacity: 0.8;
 }
 
+/* Hero */
 .hero {
+    position: relative;
     text-align: center;
-    padding: 40px 20px;
-    background-color: #c8e6c9;
-    margin-top: 20px;
-    border-radius: 8px;
+    color: white;
 }
 
-.info {
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Features */
+.features {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
-    gap: 20px;
+    padding: 2rem;
     flex-wrap: wrap;
 }
 
-.card {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
+.feature {
+    background-color: white;
     width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s;
 }
 
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature h3 {
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.feature p {
+    padding: 0 1rem 1rem 1rem;
+}
+
+/* Footer */
 footer {
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #555;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-/* Classe para aumentar fonte */
-.large-text {
-    font-size: 1.2em;
+/* Acessibilidade */
+.accessible {
+    font-size: 1.3rem;
+    background-color: black !important;
+    color: yellow !important;
 }
